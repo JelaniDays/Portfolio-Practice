@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="DaysOfDesign" content="The collective work of Jelani Days">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+
+<button class="toggleBtn">MENU</button>
+<header class="animated bounceInDown">
+        <div class="container">
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="about.html" class="current">About</a></li>
+                <li><a href ="portfolio.html">Portfolio</a></li>
+                <li><a href ="contact.html">Contact</a></li>
+            </ul>
+        </div>              
+</header>
+    
+<div class = "container">
+    <div class="about">
+        <h3 class="animated fadeInLeft">Why I Study Design</h3>
+        <p class="animated fadeInRight">My name is Jelani Days. I am a Southeast Missouri State Graduate holding a degree in a Bachelor of Science in Commercial Multimedia with an emphasis in Computer Graphics. Collaborating with like-minded individuals on creative projects is a passion of mine. As well as becoming proficient in the latest technology. I am looking to broaden my horizons and gain experience within careers that closely relate to my field of study. I believe there is always room to grow and a chance to learn new things every day.</p>
+    </div>
+</div>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/script.AS"></script>
+<script>
+        $(document).ready(function(){
+        $(".toggleBtn").click(function(){
+            $("header").css("animation-delay" , ".01s");
+            $("header").slideToggle();
+        });
+    });
+    $(window).on('resize', function(){
+        var win = $(this);
+        if(win.width() >= 576){
+            $("header").show();
+        } else{
+            $("header").hide();
+        }
+    });
+
+</script>
+
+</body>
+</html>

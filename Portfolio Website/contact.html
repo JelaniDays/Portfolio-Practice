@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Contact Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="DaysOfDesign" content="The collective work of Jelani Days">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+
+<button class="toggleBtn">MENU</button>
+<header class="animated bounceInDown">
+        <div class="container">
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="about.html">About</a></li>
+                <li><a href ="portfolio.html">Portfolio</a></li>
+                <li><a href ="contact.html" class="current">Contact</a></li>
+            </ul>
+        </div>              
+</header>
+
+<div class = "container">
+    <div class="contact">
+        <h2 class="animated fadeInDown" style="animation-delay: 2s;">What would you like to know?</h2>
+        <form method="post" action="#">
+            <input type="text" name="" class="textField animated fadeInDown" style="animation-delay: 2.2s;" placeholder="Your Name" required ="">
+            
+            <input type="email" name="" class="textField animated fadeInDown" style="animation-delay: 2.4s;" placeholder="Your Email Address" required ="">
+            
+            <textarea cols="6" rows="6" class="messageField animated fadeInDown" style="animation-delay: 2.6s;" placeholder="Type your message here."></textarea>
+            
+            <input type="submit" name="" value="Send Message" class="submitButton animated fadeInDown" style="animation-delay: 2.8s;">
+        </form>
+    </div>
+</div>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/script.AS"></script>
+
+    <script>
+        $(document).ready(function(){
+        $(".toggleBtn").click(function(){
+            $("header").css("animation-delay" , ".01s");
+            $("header").slideToggle();
+        });
+    });
+    $(window).on('resize', function(){
+        var win = $(this);
+        if(win.width() >= 576){
+            $("header").show();
+        } else{
+            $("header").hide();
+        }
+    });
+
+</script>
+
+</body>
+</html>
