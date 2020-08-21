@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo Design Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="DaysOfDesign" content="The collective work of Jelani Days">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+
+<button class="toggleBtn">MENU</button>
+<header class="animated bounceInDown">
+        <div class="container">
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="about.html">About</a></li>
+                <li><a href ="portfolio.html">Portfolio</a></li>
+                <li><a href ="contact.html">Contact</a></li>
+            </ul>
+        </div>              
+</header>
+
+
+<div class = "container">
+    <div class="portfolio">
+        <div class="figure animated flipInX" style="animation-delay: 2s;">
+            <img src="images/logodesign/Expedition%20Logo%20Final.jpg">          
+        </div>
+        <div class="figure animated flipInX" style="animation-delay: 2.2s;">
+             <img src="images/logodesign/Sunblock%20Logo%20Final.jpg">
+        </div>
+        <div class="figure animated flipInX" style="animation-delay: 2.4s;">
+            <img src="images/logodesign/Nerve%20Logo%20Final.jpg">
+        </div>
+        <div class="figure animated flipInX" style="animation-delay: 2.6s;">
+            <img src="images/logodesign/Duotone%20Logo.jpg">     
+        </div>
+    </div>
+</div>
+    
+<div class = "container">
+    <div class="portfolio">
+        <div class="figure animated flipInX" style="animation-delay: 2s;">
+            <a href="logodesign.html">
+              <img src="images/Logo.jpg">  
+            </a>
+                <h3>Logo Design</h3>
+        </div>
+        <div class="figure animated flipInX" style="animation-delay: 2.2s;">
+            <a href="photography.html"> 
+                <img src="images/Photography.png" alt="Photo Gallery">
+             </a>
+                <h3>Photography</h3>
+        </div>
+        <div class="figure animated flipInX" style="animation-delay: 2.4s;">
+            <a href="simulationdesign.html">
+                <img src="images/Simulation.jpg">
+            </a>
+                <h3>Simulation Design</h3>
+        </div>
+        <div class="figure animated flipInX" style="animation-delay: 2.6s;">
+            <a href="branding.html">
+                  <img src="images/Branding.jpg">
+            </a>
+                <h3>Branding</h3>
+        </div>
+    </div>
+</div>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/script.AS"></script>
+
+<script>
+        $(document).ready(function(){
+        $(".toggleBtn").click(function(){
+            $("header").css("animation-delay" , ".01s");
+            $("header").slideToggle();
+        });
+    });
+    $(window).on('resize', function(){
+        var win = $(this);
+        if(win.width() >= 576){
+            $("header").show();
+        } else{
+            $("header").hide();
+        }
+    });
+
+</script>
+
+</body>
+</html>
